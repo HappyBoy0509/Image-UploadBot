@@ -1,4 +1,4 @@
-# This is bot coded by W4RR10R and used for educational purposes only
+# This is bot coded by Happyboy and used for educational purposes only
 # Copyright of all images uploaded by this bot is goes to respected owners
 
 import os
@@ -9,7 +9,7 @@ from telegraph import upload_file
 async def start(client, message):
     await client.send_message(
         chat_id=message.chat.id,
-        text=f"Hello {message.from_user.first_name},\nIm telegram to telegra.ph image uploader bot by @W4RR10R",
+        text=f"Hello {message.from_user.first_name},\nI'm Telegram To Telegra.ph Image Uploader Bot By HB4All @HB4All_Bot",
         reply_to_message_id=message.message_id
     )
     
@@ -32,7 +32,7 @@ async def getimage(client, message):
     try:
         response = upload_file(imgdir)
     except Exception as error:
-        await dwn.edit_text(f"Oops something went wrong\n{error}")
+        await dwn.edit_text(f"Oops Something Went Wrong\n{error} Contact @HB4All1_Bot")
         return
     await dwn.edit_text(f"https://telegra.ph{response[0]}")
     try:
